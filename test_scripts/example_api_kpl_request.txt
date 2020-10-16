@@ -1,0 +1,22 @@
+# requests
+status = requests.post("http://.../init", json={
+    strategyItemDNF: {
+        // origin_data:{},
+        point: []
+    },
+    base,   # вот это все еще под вопросом
+    quote,
+    interval,
+    exchange,
+    dateStart,
+    dateFinish,
+})
+
+# answer
+
+{
+'res1' : [[[point], [p&ls]], [...], [...]],
+'res2' : [[[point], [p&ls]], [...], [...]],
+'res3' : [[[point], [p&ls]], [...], [...]]
+}
+

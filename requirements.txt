@@ -1,0 +1,6 @@
+flask==1.0.2
+pandas
+numpy
+requests
+scipy
+mysql-connector-python

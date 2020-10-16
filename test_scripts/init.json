@@ -1,0 +1,176 @@
+{
+    "name": "Bollinger Bands Strategy",
+    "long": true,
+    "short": true,
+    "entryBuy": {
+        "condition": "or",
+        "groups": [
+            {
+                "condition": "and",
+                "indicators": [
+                    {
+                        "key": "bbe",
+                        "params": [
+                            44,
+                            1.5
+                        ],
+                        "condition": "crossOver",
+                        "conditionParam": [
+                            0
+                        ],
+                        "id": "AZVxfiWclo"
+                    }
+                ],
+                "id": "mA3DgSgxyE"
+            }
+        ]
+    },
+    "entrySell": {
+        "condition": "or",
+        "groups": [
+            {
+                "condition": "and",
+                "indicators": [
+                    {
+                        "key": "bbe",
+                        "params": [
+                            44,
+                            1.5
+                        ],
+                        "condition": "crossUnder",
+                        "conditionParam": [
+                            1
+                        ],
+                        "id": "XoJZgoI1Ai"
+                    }
+                ],
+                "id": "HOXbWxx63N"
+            }
+        ]
+    },
+    "exitBuy": {
+        "condition": "or",
+        "groups": [
+            {
+                "condition": "and",
+                "indicators": [
+                    {
+                        "key": "bbe",
+                        "params": [
+                            44,
+                            1.5
+                        ],
+                        "condition": "crossUnder",
+                        "conditionParam": [
+                            0
+                        ],
+                        "id": "LdhsrTe2y2"
+                    }
+                ],
+                "id": "TdDROGR65v"
+            }
+        ]
+    },
+    "exitSell": {
+        "condition": "or",
+        "groups": [
+            {
+                "condition": "and",
+                "indicators": [
+                    {
+                        "key": "bbe",
+                        "params": [
+                            44,
+                            1.5
+                        ],
+                        "condition": "crossOver",
+                        "conditionParam": [
+                            1
+                        ],
+                        "id": "qcK3zBh3J2"
+                    }
+                ],
+                "id": "DjawUWPSuk"
+            }
+        ]
+    },
+    "base": "BTC",
+    "quote": "USD",
+    "interval": "1h",
+    "exchange": "BITFINEX",
+    "initialBalance": 10000,
+    "indicatorsOrder": [
+        "AZVxfiWclo",
+        "XoJZgoI1Ai",
+        "LdhsrTe2y2",
+        "qcK3zBh3J2"
+    ],
+    "indicatorsLimits": {
+        "AZVxfiWclo": [
+            [
+                1,
+                60,
+                1
+            ],
+            [
+                0.1,
+                4,
+                0.1
+            ]
+        ],
+        "XoJZgoI1Ai": [
+            [
+                1,
+                60,
+                1
+            ],
+            [
+                0.1,
+                4,
+                0.1
+            ]
+        ],
+        "LdhsrTe2y2": [
+            [
+                1,
+                60,
+                1
+            ],
+            [
+                0.1,
+                4,
+                0.1
+            ]
+        ],
+        "qcK3zBh3J2": [
+            [
+                1,
+                60,
+                1
+            ],
+            [
+                0.1,
+                4,
+                0.1
+            ]
+        ]
+    },
+    "numberOfParams": {
+        "AZVxfiWclo": 2,
+        "XoJZgoI1Ai": 2,
+        "LdhsrTe2y2": 2,
+        "qcK3zBh3J2": 2
+    },
+    "points": [
+        [
+            9,
+            1.6,
+            7,
+            1.3,
+            1,
+            1.8,
+            43,
+            1.9
+        ]
+    ]
+}
